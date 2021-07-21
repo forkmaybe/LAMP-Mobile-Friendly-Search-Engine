@@ -3,15 +3,7 @@
 /**
  * Description:
  * ------------
- * Script takes a list of xml feeds,
- * parses each job out and checks the database for its existance.
- * If the job already exists, it is skipped. Otherwise its added.
- *
- * If expired date is not entered the job will not appear on the site.
- *
- * this script also establishes those jobs which are nolonger available on the
- * various jobs sites and updates the database by marking the "job_status" fields
- * as "No" and also updates the time the record was last updated.
+ * We find the skills in job title and description
  **/
 
 // Db connection setup
