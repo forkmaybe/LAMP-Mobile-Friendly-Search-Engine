@@ -158,7 +158,6 @@ img.button {
     padding:15px;
 }
 
-
 .box {
     background: rgba(91, 140, 186, 0.42);
     /*border: 1px solid #000000;*/
@@ -174,8 +173,6 @@ img.button {
     -moz-border-radius: 10px;
     padding:10px;
 }
-
-
 
 .textfield_effect3, .sel select {
     border-width: 1px;
@@ -194,7 +191,6 @@ img.button {
     margin-top:7px;
     margin-left:0px;
 }
-
 
 .jobsite1132
 {
@@ -224,9 +220,6 @@ a.jobsite1132:link,a.jobsite1132:active,a.jobsite1132:visited
 a.jobsite1132:hover{
     text-decoration:none;}
 
-
-
-
 .jobsite1
 {
     font-family: 'gentium_basicregular';
@@ -251,7 +244,6 @@ a.jobsite1132:hover{
     /*color: #025b9d;*/
     text-decoration:none;
 }
-
 
 .jobsite2
 {
@@ -469,8 +461,6 @@ a.jobsite5:hover{
     height:42px;
     background:#fff;
 }
-
-
 
 
 ul.mainmenu { float:left; width:100%; list-style:none; height:50px; padding:0;}
