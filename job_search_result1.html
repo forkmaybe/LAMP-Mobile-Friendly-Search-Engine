@@ -1,0 +1,278 @@
+{INFO_TEXT_SEARCH_JOB_TITLE}{HEADER_HTML}
+
+<style type="text/css">
+
+.main{padding:20px;}
+    .logo{padding:10px 20px 20px 20px;margin-right:20px;}
+    .content{margin:0px;}
+    .box span{
+
+        color:black;
+    }
+    .box em{
+        color:black;
+    }
+.adsbygoogle{
+    position:absolute;
+    right:0;
+    top: 120px;
+}
+</style>
+<div class="background">
+
+<div class="main">
+    <div class="centered">
+        <ul class="nav">
+            <li><a href="/" >Home</a></li>
+            <li class="blog"><a href="/article.php">Blog</a></li>
+
+        </ul>
+    </div>
+    <div class="search_form">
+
+        <form name="search1" action="/job_search.php" method="get">
+            <input id="search" type="hidden" name="action" value="search">
+            <div class="box">
+                <div class="showhim">
+
+                    <input pattern="^[a-zA-Z.][ a-zA-Z0-9-#+.\.]{0,60}$" autocomplete="off" tabindex="1" autofocus="true" class="showhim" type="text" placeholder="e.g. Software Engineer" name="keyword" maxlength="80"/>
+
+                    {chk_jt}
+                    {chk_ct}
+                    <fieldset class="showme">
+                    </fieldset>
+                </div>
+
+            </div>
+            <div class="box">
+
+                <input pattern="^[a-zA-Z.][ a-zA-Z0-9-#+.\.]{0,60}$" autocomplete="off" tabindex="2" type="text" placeholder="e.g. Berlin" name="location" maxlength="80"/>
+
+            </div>
+
+            <input tabindex="3" type="submit" value="Find Job" class="max" name="" />
+
+        </form>
+        <div class="right_box">
+            <a href="http://www.linkedin.com/company/siliconarmada" target="_blank"><img src="/img/socialMediaIcons/linkedin.png" width="20" height="20" alt="LinkedIn" ></a>
+            <a href="http://facebook.com/siliconarmada" target="_blank"><img src="/img/socialMediaIcons/fb.png" width="20" height="20" alt="Facebook" ></a>
+            <a href="https://plus.google.com/+SiliconArmadaSA" target="_blank"><img src="/img/socialMediaIcons/google_plus.png" width="20" height="20" alt="Google+" ></a>
+            <a href="https://www.pinterest.com/siliconarmada" target="_blank"><img src="/img/socialMediaIcons/pinterest.png" width="20" height="20" alt="Pinterest" ></a>
+            <a href="http://twitter.com/siliconarmada" target="_blank"><img src="/img/socialMediaIcons/twitter.png" width="20" height="20" alt="Twitter" ></a>
+        </div>
+    </div>
+    </div>
+    </div>
+
+<script src="{INFO_TEXT_JSCRIPT_FILE}"></script>
+<script src="{HOST_NAME}jscript/pagination.js"></script>
+
+<style type="text/css">
+.table-row{
+cursor: pointer;
+cursor: hand;
+}
+.table-row:hover{
+  background: #EEEEEE;
+  transition: all 0.3s ease 0s;
+}
+
+.main .search_form .box .showhim[name="keyword"]{
+    border-radius: 0px !important;
+    margin: 0px !important;
+    min-height:30px !important;
+    height:30px !important;
+    color:black !important;
+
+}
+.main .search_form .box input[name="location"]{
+    border-radius: 0 !important;
+    margin: 0 !important;
+    color:black !important;
+    min-height:30px !important;
+    height:30px !important
+
+}
+.main .search_form input[type="submit"]{
+    margin-top:0 !important;
+    margin-bottom:12px !important;
+
+    min-height:30px !important;
+    height:32px !important;
+    float: middle !important;
+}
+    .main{
+        padding-top:15px !important;
+        padding-bottom:13px !important;
+        background:black !important;
+        position: relative !important;
+        height: 41px !important;
+        background: black !important;
+        font-family: play !important;
+    }
+    div.background{
+        background: black !important;
+        max-width:100% !important;
+    }
+
+    div.box{
+        width: 308px !important;
+    }
+.right_box img {
+    margin:-3px 6px 0 6px !important;
+    float: left !important;
+}
+.showhim .showme {
+    margin-top: 28px !important;
+}
+    .right_box{
+        float:right;
+        width: auto !important;
+        padding-right: 7px !important;
+        padding-top: 10px;
+    }
+    ul.nav li a{
+        color:white !important;
+        text-decoration:none;
+        display:inline !important;
+        font-size: 20px !important;
+    }
+.main .centered .nav{
+    padding-top:9px;
+}
+
+.showme{
+    font-family: 'Roboto', sans-serif !important;
+}
+ul.nav li a:hover{
+    opacity:0.9;
+}
+ul.nav li:after {
+    content: "|" !important;
+    position: absolute !important;
+    right: -10px !important;
+    top: 0 !important;
+    color: white !important;
+}
+    .blog{
+        padding-right:60px !important;
+    }
+
+@media screen and (min-width: 320px) and (max-width: 1080px) {
+    .background {
+        display: none;
+    }
+}
+@media screen and (min-width: 1081px) and (max-width: 5000px) {
+    .header {
+        display: none;
+    }
+    #magnifying-glass{
+        display:none;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 1080px) {
+
+.background{display:none;}
+    .right{display:none;}
+    #space{display:none;}
+}
+@media screen and (min-width: 1080px) and (max-width: 1200px) {
+
+    .right_box img {
+        margin:-3px 4px 0 4px !important;
+        width: 14px;
+        height:14px;
+    }
+
+    .main .search_form .box .showhim[name="keyword"]{
+        width:250px !important;
+    }
+    .main .search_form .box input[name="location"]{
+        width:250px !important;
+    }
+    .main .search_form input[type="submit"]{
+       width:110px !important;
+    }
+    div.box{
+        width:280px !important;
+    }
+
+}
+
+.showhim:hover .showme{
+    width: 272px; height: 100px;/* jobtype height change here */
+    opacity:0.85;
+
+}
+#space{
+    margin:0 0 20px 40px;
+}
+
+.right{
+    margin-top:140px;
+    height:500px;
+}
+    #resultsFound{
+        font-size: 16px;
+        font-family: Play;
+    }
+</style>
+<div class="content">
+    	<div class="centered">
+
+    		<div class="right">
+                <div class='fln-affiliate' data-username='SmarterAbout' data-style='' data-qts='//t.flnaffiliate.com/' data-type='banner' data-theme='faces' data-size='336x280' ></div>
+
+            </div>
+            <a href="http://www.dpbolvw.net/click-7991787-12166798-1447971003000" target="_top"><img id="space" src="http://www.ftjcfx.com/image-7991787-12166798-1447971003000" width="728" height="90" alt="" border="0"/></a>
+            <div class="txt">
+            	<p id="resultsFound">{searchResultsFound}</p>
+
+                {form}
+                <div id="page_contents">
+
+<div class="result_table">
+
+
+                 <!-- BEGIN job_search_result -->
+                    {job_search_result.clickLink}
+                    <div id="mobileRow" class="table-row" style="{job_search_result.featured}" {job_search_result.featuredClass}>
+
+    <div id="mobileLogo" class="table-cell company">
+                            {job_search_result.logo}
+                        </div>
+
+                        <div class="table-cell description">
+                            <div class="name">{job_search_result.job_title}</div>
+                            <span class="location-company" ><div class="companyName">{job_search_result.company_name}</div><img class="location-img" src="img/location.png" width="12" height="17" alt=""/>   {job_search_result.location}</span>
+							<p class="descriptionSummary">{job_search_result.description}</p>
+                        </div>
+
+    <div class="skillGroup">{job_search_result.skill1}{job_search_result.skill2}{job_search_result.skill3}<div class="levelGroup">{job_search_result.job_level_word}{job_search_result.job_type_word}</div></div>
+
+    <div id="mobileInnerRow" class="table-cell name640">
+                            <div id="mobileName" class="name">{job_search_result.job_title}</div>
+                            <span id="mobileLocation-company" class="location-company" ><div id="mobileCompanyName" class="companyName">{job_search_result.company_name}</div><img id="mobileLocation-img" class="location-img" src="img/location.png" width="16" height="21" alt=""/>   {job_search_result.location}</span>
+    </div>
+                    </div>
+                    </a>
+
+                <!-- END job_search_result -->
+                </div>
+                <div id="indeed-results" class="result_table">
+                {indeed-job}
+                {indeed-job1}
+                    {indeed-job2}{indeed-job3}{indeed-job4}{indeed-job5}{indeed-job6}{indeed-job7}{indeed-job8}{indeed-job9}{indeed-job10}{indeed-job11}{indeed-job12}{indeed-job13}
+                    </div>
+                {hotLinks}
+                {pages}
+                {indeed-api}
+                </div>
+
+            </div>
+    	</div>
+
+    </div>
+
+{FOOTER_HTML}
