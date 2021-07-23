@@ -1,10 +1,7 @@
 <?
 /*
 ***********************************************************
-**********# Name          : SA   #**********
-**********# Company       : SILICON ARMADA                 #**********
-**********# Copyright (c) WWW.SILICONARMADA.COM 2016     #**********
-***********************************************************
+
 */
 session_cache_limiter('private_no_expire');
 include_once("include_files.php");
