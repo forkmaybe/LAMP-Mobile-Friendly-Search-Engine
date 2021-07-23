@@ -1,0 +1,25 @@
+<div id="home" class="main">
+    <div class="logo">
+        <a href="/"><img src="/img/logo.png" width="118" height="80" alt="logo" /></a>
+    </div>
+    <div class="search_form">
+        <form name="search1" action="/Tweets.php" method="get">
+            <input type="hidden" name="action" value="search">
+            <div id="keyword-box" class="box">
+                <div class="showhim">
+                    <span class="whatwhere">Keyword:</span>
+                    <input pattern="^[a-zA-Z.][ a-zA-Z0-9-#+.\.]{0,60}$" autocomplete="off" tabindex="1" class="showhim" id="keyword" type="search" placeholder="e.g. Software Engineer" name="keyword" maxlength="80"/>
+                    <ul class="suggestions">
+                    </ul>
+                    <em class="search-caption">Keyword</em>
+                </div>
+                <div id="location-box" class="box">
+                    <span class="whatwhere">Location:</span>
+                    <input pattern="^[a-zA-Z.][ a-zA-Z0-9-#+.\.]{0,60}$" autocomplete="off" type="search" tabindex="2" placeholder="e.g. Berlin" id="location" name="location" maxlength="80"/>
+                    <em class="search-caption">city or country</em><input type="submit" tabindex="3" value="Find Tech Jobs" class="min" />
+                </div>
+                <input tabindex="3" type="submit" value="Make Tweets" class="max" />
+            </div>
+        </form>
+    </div>
+    </div>
