@@ -215,7 +215,8 @@ if($keyword !="") {
         $noSmallKeyword= trim($noSmallKeyword);
         $smallLike = " and(key1 LIKE '$smallKeyword%' or key2 LIKE '$smallKeyword%' or key3 LIKE '$smallKeyword%')";
     }
-}$random=", rand() desc";
+}
+$random=", rand() desc";
 $companyLike=" or r.recruiter_company_name LIKE '%$keyword%')";
 $join=" as j left outer join recruiter as r on (j.recruiter_id=r.recruiter_id) left outer join recruiter_login as rl on (j.recruiter_id=rl.recruiter_id)";
 if(strpos($keyword,"+")){//both ,key has +
