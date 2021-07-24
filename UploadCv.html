@@ -1,0 +1,35 @@
+<section id="containerForm" class="containerForm">
+    <h1 class="title">Let Employers Find You</h1><div id="x">X</div>
+    <div id="form-messages"></div>
+    <form enctype="multipart/form-data" id="form" class="form" action="/jqueryForms/mailer.php" method="get" >
+
+        <div id="hide">
+            <p></p>
+            <p>
+                <label class="Label" for="email">Email</label>
+                <input required="true" type="email" placeholder="Your Email" id="email" name="email" tabindex="2"/>
+            </p>
+            <p>
+                <label class="Label" for="password">Password</label>
+                <input required="true" type="password" placeholder="Password…" id="password" name="password" tabindex="3"/>
+            </p>
+            <p class="bottom-margin">
+                <label class="Label" for="password2">Confirm Password</label>
+                <input required="true" type="password" placeholder="Confirm Password…" id="password2" name="password2" tabindex="4"/>
+            </p>
+            <div class="checkboxDiv">
+                <p>Receive targeted job offers from:<div class="checkboxLabel"><input type="checkbox" id="receive" name="receive"><label id="firstLabel">Agencies</label></div></p></br>
+                <p><div class="checkboxLabel"><input type="checkbox" id="contact" name="contact"><label>Employers</label></div></p></br>
+            </div>
+
+            <p></p>
+            <input type="submit" id="submit" value="Upload Your Profile">
+            <p>All CV's uploaded are searched using Artificial Intelligence</p>
+        </div>
+        <div class="uploadCv"><div id="opio-7f934ffc-ab48-4936-9751-2891ad75355e"></div></div>
+        <div id="thank"></div>
+    </form>
+</section>
+
+
+<script src="/jqueryForms/app.js"></script>
