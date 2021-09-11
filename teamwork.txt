@@ -1,0 +1,11 @@
+*after the files and db are updated you can run Helper.php to populate the levels and skills for all jobs in the db
+
+then run CompanyTypeSetter.php - this sets all the company's jobs to the it's companies type so as long as
+the company is set correctly in the recruiter_type column in the recruiter table, this file will set all of the jobs as
+the correct company type so they can be found by company type in the search.
+
+*we need to set up a cron job so CompanyTypeSetter.php will run after any addjobs
+
+google ad on search result page
+tab indexes added but only work partly in some browers and situations - as good as i can get it
+recruiter type field added to the recruiter registration
