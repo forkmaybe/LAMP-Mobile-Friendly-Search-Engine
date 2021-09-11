@@ -1,0 +1,34 @@
+After database has been updated with new table and columns in db prep folder
+
+We have to run some manual commands for now:
+
+*set all companies as Employer in jobs table
+
+UPDATE  `recruiter` SET  `recruiter_type` =  "Employer"
+
+*set all jobs as Employer in jobs table
+
+UPDATE  `jobs` SET  `job_recruiter_type` =  "Employer"
+
+*set Stelfox as an Agency, if there is any other companies already there thats an Agency then put there id in this and repeat
+
+UPDATE  `recruiter` SET  `recruiter_type` =  "Agency" WHERE `recruiter_id` = 385
+
+*set all Stelfox jobs as Agency in jobs table
+
+UPDATE  `jobs` SET  `job_recruiter_type` =  "Agency" WHERE `recruiter_id` = 385
+
+*any new agencies can be set as Agency with the new textbox in recruiter registration
+*but after there jobs have been added to jobs table you must run this query
+
+*set all of that agencies jobs as Agency in jobs table
+
+UPDATE  `jobs` SET  `job_recruiter_type` =  "Agency" WHERE `recruiter_id` = <insert new agency recruiter id>
+
+For now you must run these queries after any jobs are added to the database:
+
+first set all jobs as Employer, then keep the queries saved for any agencies and these run in this order:
+
+UPDATE  `jobs` SET  `job_recruiter_type` =  "Employer";
+UPDATE  `jobs` SET  `job_recruiter_type` =  "Agency" WHERE `recruiter_id` = 385
+UPDATE  `jobs` SET  `job_recruiter_type` =  "Agency" WHERE `recruiter_id` = <insert new agency recruiter id>
